@@ -23,22 +23,7 @@ const App = () => {
     fetchTasks();
   }, []);
 
-  const handleDownload = async () => {
-    try {
-      const response = await axios.get("https://apis-puce.vercel.app/api/tasks/download-pdf", {
-        responseType: "blob", 
-      });
   
-      const blob = new Blob([response.data], { type: "application/pdf" });
-  
-      const url = window.URL.createObjectURL(blob);
-  
-      window.open(url);
-  
-    } catch (error) {
-      console.error("Error downloading PDF:", error);
-    }
-  };
   return (
     <>
   <Toaster />
