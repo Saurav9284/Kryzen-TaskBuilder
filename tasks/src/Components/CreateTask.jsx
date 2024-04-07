@@ -37,7 +37,7 @@ const handleSubmit = async (e) => {
       <input
         placeholder="Enter task name.."
         type="text"
-        className="border-2 border-slate-400 bg-slate-100 rounded-md mr-4 h-12 w-70 px-1"
+        className="border-2 border-slate-400 rounded-md mr-4 h-12 w-60 px-1"
         value={newtask.name}
         onChange={(e) =>
           setNewTask({ ...newtask, id: uuidv4(), name: e.target.value })

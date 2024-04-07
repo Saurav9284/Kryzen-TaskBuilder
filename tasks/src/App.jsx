@@ -29,9 +29,34 @@ const App = () => {
   }, [filter]);
 
   const handleDownload = async () => {
-    //  download PDF
+    try {
+      let urll = "https://kryzen-task-builder-backend.vercel.app/api/task/pdf";
+      if (filter) {
+        urll += `?dateRange=${filter}`;
+      }
+      const response = await axios.get(urll, {
+        responseType: 'blob', 
+      });
+  
+      const blob = new Blob([response.data], { type: 'application/pdf' });
+  
+      // Create a temporary URL for the blob
+      const url = window.URL.createObjectURL(blob);
+  
+      // Create a temporary anchor element
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'tasks.pdf'; // Set download attribute to specify the file name
+      a.click();
+  
+      // Cleanup
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Error downloading PDF:", error);
+      toast.error("Failed to download PDF", { icon: "❌" });
+    }
   };
-
+  
   const options = [
     { value: "", label: "Select Filter" },
     { value: "today", label: "Today" },
