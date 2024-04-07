@@ -35,6 +35,7 @@ const handleSubmit = async (e) => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        placeholder="Enter task name.."
         type="text"
         className="border-2 border-slate-400 bg-slate-100 rounded-md mr-4 h-12 w-70 px-1"
         value={newtask.name}
@@ -42,7 +43,7 @@ const handleSubmit = async (e) => {
           setNewTask({ ...newtask, id: uuidv4(), name: e.target.value })
         }
       />
-      <button className="bg-green-500 rounded-md px-4 h-12 text-white">
+      <button className="bg-green-700 rounded-md px-4 h-12 text-white">
         Create Task
       </button>
     </form>
