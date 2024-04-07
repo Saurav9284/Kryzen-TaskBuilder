@@ -43,7 +43,7 @@ const App = () => {
     <>
     <Toaster />
     <div className="w-screen h-screen flex flex-col items-center pt-32 gap-16 relative">
-      <h1 className="text-3xl font-bold mb-8 absolute top-8 left-5" style={{ background: 'linear-gradient(90deg, rgba(228,53,159,1) 26%, rgba(194,76,219,1) 42%, rgba(188,230,137,1) 70%, rgba(156,10,81,1) 100%, rgba(9,9,117,1) 100%, rgba(0,212,255,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', paddingLeft: '16px', paddingTop: '16px' }}>Task-Builder</h1>
+      <h1 className="text-3xl font-bold mb-8 absolute top-3 left-5" style={{ background: 'linear-gradient(90deg, rgba(228,53,159,1) 26%, rgba(194,76,219,1) 42%, rgba(188,230,137,1) 70%, rgba(156,10,81,1) 100%, rgba(9,9,117,1) 100%, rgba(0,212,255,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', paddingLeft: '16px', paddingTop: '16px' }}>Task-Builder</h1>
       <button onClick={handleDownload} className="bg-cyan-700 rounded-md px-4 h-12 text-white absolute top-8 right-8">
         Download task as PDF
       </button>
