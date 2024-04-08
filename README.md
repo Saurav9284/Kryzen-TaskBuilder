@@ -25,7 +25,7 @@ The Task-Builder app allows users to create tasks. It supports drag-and-drop fun
 
 ## API Endpoints🌍 :-
 
-🌐 <a href='https://arba-backend.vercel.app/'>URL</a>
+🌐 <a href='https://kryzen-task-builder-backend.vercel.app/'>URL</a>
 
 ✅ Server check ==> app/
 
