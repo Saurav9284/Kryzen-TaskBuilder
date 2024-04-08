@@ -41,3 +41,8 @@ The Task-Builder app allows users to create tasks. It supports drag-and-drop fun
 
 ## Task-Builder :-
 
+![Screenshot 2024-04-08 150009](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/0b16488f-5a06-4fdb-8f7e-9773422560d1)
+
+
+![Screenshot 2024-04-08 150018](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/559504b2-0254-4a19-8dd5-85c39b599022)
+
