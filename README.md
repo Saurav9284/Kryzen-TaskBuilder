@@ -4,21 +4,21 @@ The Task-Builder app allows users to create tasks. It supports drag-and-drop fun
 
 ## 🟢 Frontend :-
 
-🟡 GitHub Repo :- 
+🟡 GitHub Repo :- https://github.com/Saurav9284/Kryzen-TaskBuilder
 
-🟡 Frontend Deploy :- 
+🟡 Frontend Deploy :- https://task-deploy-ten.vercel.app/
 
 ## 🟢 Backend :-
 
-🟡 GitHub Repo :- 
+🟡 GitHub Repo :- https://github.com/Saurav9284/Kryzen-TaskBuilder-Backend
 
-🟡 Backend Deploy :- 
+🟡 Backend Deploy :- https://kryzen-task-builder-backend.vercel.app/
 
  ## How to Run <br/>
  
    ### Installation 
    
-   - Clone the repository:  `` 
-   - Navigate to the project directory:   `cd taska` 
+   - Clone the repository:  `https://github.com/Saurav9284/Kryzen-TaskBuilder` 
+   - Navigate to the project directory:   `cd tasks` 
    - Install the dependencies:   `npm install` 
    - Start the development server:   `npm run dev`
