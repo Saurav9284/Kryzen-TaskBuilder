@@ -20,6 +20,11 @@ Frontend: https://github.com/Saurav9284/Kryzen-TaskBuilder
 
 Backend: https://github.com/Saurav9284/Kryzen-TaskBuilder-Backend
 
+## Credentials :-
+
+- Email - admin@gmail.com
+- Password - Admin@123 
+
 
 ## Video Walkthrough of the project
 
