@@ -68,6 +68,13 @@ const App = () => {
           Task-Builder
         </h1>
         <div className="absolute top-8 right-8 flex gap-4">
+        <Select
+          options={options}
+          value={options.find((option) => option.value === filter)}
+          onChange={(selectedOption) => setFilter(selectedOption.value)}
+          placeholder="Select Filter"
+          className="w-64"
+        />
           <CreateTask tasks={tasks} setTasks={setTasks} />
           <button
             onClick={handleDownload}
@@ -76,13 +83,6 @@ const App = () => {
             Download PDF
           </button>
         </div>
-        <Select
-          options={options}
-          value={options.find((option) => option.value === filter)}
-          onChange={(selectedOption) => setFilter(selectedOption.value)}
-          placeholder="Select Filter"
-          className="w-64"
-        />
         <div id="get-task">
           <GetTask tasks={tasks} setTasks={setTasks} />
         </div>
