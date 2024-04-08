@@ -22,3 +22,23 @@ The Task-Builder app allows users to create tasks. It supports drag-and-drop fun
    - Navigate to the project directory:   `cd tasks` 
    - Install the dependencies:   `npm install` 
    - Start the development server:   `npm run dev`
+
+## API Endpoints🌍 :-
+
+🌐 <a href='https://arba-backend.vercel.app/'>URL</a>
+
+✅ Server check ==> app/
+
+### CURD Products :-
+
+✅ GET ==> /api/task
+
+✅ POST ==> /api/task
+
+✅ PATCH ==> /api/task/update/id
+
+✅ DELETE ==> /api/delete/delete/id
+
+## Task-Builder :-
+
+![Screenshot 2024-04-08 114310](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/61489ead-0a20-4199-8b45-c231772bff9d)
