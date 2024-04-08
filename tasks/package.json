@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "axios": "^1.6.8",
     "file-saver": "^2.0.5",
+    "framer-motion": "^11.0.25",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "netlify": "^13.1.14",

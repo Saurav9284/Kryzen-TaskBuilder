@@ -67,22 +67,22 @@ const App = () => {
         >
           Task-Builder
         </h1>
-        <button
-          onClick={handleDownload}
-          className="bg-cyan-700 rounded-md px-4 h-12 text-white absolute top-8 right-8"
-        >
-          Download PDF
-        </button>
+        <div className="absolute top-8 right-8 flex gap-4">
+          <CreateTask tasks={tasks} setTasks={setTasks} />
+          <button
+            onClick={handleDownload}
+            className="bg-cyan-700 rounded-md px-4 h-12 text-white"
+          >
+            Download PDF
+          </button>
+        </div>
         <Select
           options={options}
           value={options.find((option) => option.value === filter)}
           onChange={(selectedOption) => setFilter(selectedOption.value)}
           placeholder="Select Filter"
-          className="w-64 "
+          className="w-64"
         />
-        <div id="create-task">
-          <CreateTask tasks={tasks} setTasks={setTasks} />
-        </div>
         <div id="get-task">
           <GetTask tasks={tasks} setTasks={setTasks} />
         </div>
