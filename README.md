@@ -8,11 +8,17 @@ The Task-Builder app allows users to create tasks. It supports drag-and-drop fun
 
 Fullstack
 
-## Deplolyed App
+## Deplolyed Links :- 
 
 Frontend: https://task-deploy-ten.vercel.app/
 
 Backend: https://kryzen-task-builder-backend.vercel.app/
+
+## Github Links :- 
+
+Frontend: https://github.com/Saurav9284/Kryzen-TaskBuilder
+
+Backend: https://github.com/Saurav9284/Kryzen-TaskBuilder-Backend
 
 
 ## Video Walkthrough of the project
@@ -36,15 +42,25 @@ Backend: https://kryzen-task-builder-backend.vercel.app/
 
 🌐 <a href='https://kryzen-task-builder-backend.vercel.app/'>URL</a>
 
-✅ Server check ==> app/
+- `app/` - To check server
 
-✅ GET ==> /api/task
+- `/api/task` - To Get all tasks
 
-✅ POST ==> /api/task
+- `/api/task` - To Post new task
 
-✅ PATCH ==> /api/task/update/id
+- `/api/task/update/id` - To Update task
 
-✅ DELETE ==> /api/delete/delete/id
+- `/api/delete/delete/id` - To Delete task
+
+### Queries
+
+- `/api/task?dateRange=today` - To Filter task created at today
+
+- `/api/task?dateRange=lessThan5Days` - To Filter task created less Than 5 Days ago
+
+- `/api/task?dateRange=moreThan5Days` - To Filter task created more Than 5 Days ago
+
+
 
 
 ## Technology Stack
@@ -54,10 +70,12 @@ Backend: https://kryzen-task-builder-backend.vercel.app/
 - MongoDB
 - Vite+React
 - Tailwind CSS
+- Vercel
 
 ## Screenshots :-
 
 ![Screenshot 2024-04-08 150009](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/e9d619d4-ae0f-44db-87ce-decf783f8ecf)
+
 
 ![Screenshot 2024-04-08 150018](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/90020790-2699-4ce1-93d5-9f45bde4345b)
 
