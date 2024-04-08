@@ -10,7 +10,7 @@ Fullstack
 
 ## Deplolyed Links :- 
 
-Frontend: https://task-deploy-ten.vercel.app/
+Frontend: https://task-deploy-ten.vercel.app/login
 
 Backend: https://kryzen-task-builder-backend.vercel.app/
 
