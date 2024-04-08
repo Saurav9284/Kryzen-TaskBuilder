@@ -1,23 +1,32 @@
-## 📝 Task-Builder
+# 📝 Task-Builder
+
+## Introduction
 
 The Task-Builder app allows users to create tasks. It supports drag-and-drop functionality for updating task statuses and delete task from the backend. Users can filter tasks based on their creation date, and they have the option to download tasks in PDF format according to their status.
 
-## 🟢 Frontend :-
+## Project Type
 
-🟡 GitHub Repo :- https://github.com/Saurav9284/Kryzen-TaskBuilder
+Fullstack
 
-🟡 Frontend Deploy :- https://task-deploy-ten.vercel.app/
+## Deplolyed App
 
-## 🟢 Backend :-
+Frontend: https://task-deploy-ten.vercel.app/
 
-🟡 GitHub Repo :- https://github.com/Saurav9284/Kryzen-TaskBuilder-Backend
+Backend: https://kryzen-task-builder-backend.vercel.app/
 
-🟡 Backend Deploy :- https://kryzen-task-builder-backend.vercel.app/
 
- ## How to Run <br/>
- 
-   ### Installation 
-   
+## Video Walkthrough of the project
+
+<a href='https://drive.google.com/file/d/1-o7EYz50GF-m499sTKoA6x9WfjSfXLOT/view?usp=drive_link'>Link</a>
+
+## Features
+
+- Drag & Drop
+- Download data in PDF 
+- Support CURD operations
+
+## Installation & Getting started
+
    - Clone the repository:  `https://github.com/Saurav9284/Kryzen-TaskBuilder` 
    - Navigate to the project directory:   `cd tasks` 
    - Install the dependencies:   `npm install` 
@@ -29,8 +38,6 @@ The Task-Builder app allows users to create tasks. It supports drag-and-drop fun
 
 ✅ Server check ==> app/
 
-### CURD Products :-
-
 ✅ GET ==> /api/task
 
 ✅ POST ==> /api/task
@@ -39,10 +46,18 @@ The Task-Builder app allows users to create tasks. It supports drag-and-drop fun
 
 ✅ DELETE ==> /api/delete/delete/id
 
-## Task-Builder :-
 
-![Screenshot 2024-04-08 150009](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/0b16488f-5a06-4fdb-8f7e-9773422560d1)
+## Technology Stack
 
+- Node.js
+- Express.js
+- MongoDB
+- Vite+React
+- Tailwind CSS
 
-![Screenshot 2024-04-08 150018](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/559504b2-0254-4a19-8dd5-85c39b599022)
+## Screenshots :-
+
+![Screenshot 2024-04-08 150009](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/e9d619d4-ae0f-44db-87ce-decf783f8ecf)
+
+![Screenshot 2024-04-08 150018](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/90020790-2699-4ce1-93d5-9f45bde4345b)
 
