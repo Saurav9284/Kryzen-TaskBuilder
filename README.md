@@ -1,23 +1,38 @@
-## 📝 Task-Builder
+# 📝 Task-Builder
+
+## Introduction
 
 The Task-Builder app allows users to create tasks. It supports drag-and-drop functionality for updating task statuses and delete task from the backend. Users can filter tasks based on their creation date, and they have the option to download tasks in PDF format according to their status.
 
-## 🟢 Frontend :-
+## Project Type
 
-🟡 GitHub Repo :- https://github.com/Saurav9284/Kryzen-TaskBuilder
+Fullstack
 
-🟡 Frontend Deploy :- https://task-deploy-ten.vercel.app/
+## Deplolyed Links :- 
 
-## 🟢 Backend :-
+Frontend: https://task-deploy-ten.vercel.app/
 
-🟡 GitHub Repo :- https://github.com/Saurav9284/Kryzen-TaskBuilder-Backend
+Backend: https://kryzen-task-builder-backend.vercel.app/
 
-🟡 Backend Deploy :- https://kryzen-task-builder-backend.vercel.app/
+## Github Links :- 
 
- ## How to Run <br/>
- 
-   ### Installation 
-   
+Frontend: https://github.com/Saurav9284/Kryzen-TaskBuilder
+
+Backend: https://github.com/Saurav9284/Kryzen-TaskBuilder-Backend
+
+
+## Video Walkthrough of the project
+
+<a href='https://drive.google.com/file/d/1-o7EYz50GF-m499sTKoA6x9WfjSfXLOT/view?usp=drive_link'>Link</a>
+
+## Features
+
+- Drag & Drop
+- Download data in PDF 
+- Support CURD operations
+
+## Installation & Getting started
+
    - Clone the repository:  `https://github.com/Saurav9284/Kryzen-TaskBuilder` 
    - Navigate to the project directory:   `cd tasks` 
    - Install the dependencies:   `npm install` 
@@ -25,20 +40,42 @@ The Task-Builder app allows users to create tasks. It supports drag-and-drop fun
 
 ## API Endpoints🌍 :-
 
-🌐 <a href='https://arba-backend.vercel.app/'>URL</a>
+🌐 <a href='https://kryzen-task-builder-backend.vercel.app/'>URL</a>
 
-✅ Server check ==> app/
+- `app/` - To check server
 
-### CURD Products :-
+- `/api/task` - To Get all tasks
 
-✅ GET ==> /api/task
+- `/api/task` - To Post new task
 
-✅ POST ==> /api/task
+- `/api/task/update/id` - To Update task
 
-✅ PATCH ==> /api/task/update/id
+- `/api/delete/delete/id` - To Delete task
 
-✅ DELETE ==> /api/delete/delete/id
+### Queries
 
-## Task-Builder :-
+- `/api/task?dateRange=today` - To Filter task created at today
 
-![Screenshot 2024-04-08 114310](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/61489ead-0a20-4199-8b45-c231772bff9d)
+- `/api/task?dateRange=lessThan5Days` - To Filter task created less Than 5 Days ago
+
+- `/api/task?dateRange=moreThan5Days` - To Filter task created more Than 5 Days ago
+
+
+
+
+## Technology Stack
+
+- Node.js
+- Express.js
+- MongoDB
+- Vite+React
+- Tailwind CSS
+- Vercel
+
+## Screenshots :-
+
+![Screenshot 2024-04-08 150009](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/e9d619d4-ae0f-44db-87ce-decf783f8ecf)
+
+
+![Screenshot 2024-04-08 150018](https://github.com/Saurav9284/Kryzen-TaskBuilder/assets/135011685/90020790-2699-4ce1-93d5-9f45bde4345b)
+
