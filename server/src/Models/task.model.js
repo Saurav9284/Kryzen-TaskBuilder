@@ -4,7 +4,8 @@ const taskSchema = new mongoose.Schema({
     name: { type: String, required: true },
     status: { type: String, enum: ["task", "in progress", "done", "rework"], required: true },
     id: { type: String }, 
-    created_at: { type: Date, default: Date.now } 
+    created_at: { type: Date, default: Date.now },
+    complete_date: {type:Date}
 });
 
 const TaskModel = mongoose.model("Task", taskSchema);
