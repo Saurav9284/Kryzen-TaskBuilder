@@ -38,8 +38,8 @@ TaskController.get('/task', async (req, res) => {
 
   TaskController.post('/task', async (req, res) => {
     try {
-      const { name, status ,id} = req.body;
-      const task = await TaskModel.create({ name, status ,id});
+      const { name, status ,id , complete_date} = req.body;
+      const task = await TaskModel.create({ name, status ,id, complete_date});
       await task.save();
       res.status(201).json({ task, message: 'Task created successfully' });
     } catch (error) {
