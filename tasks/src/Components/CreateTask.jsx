@@ -16,7 +16,7 @@ const CreateTask = ({ tasks, setTasks }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://kryzen-task-builder-backend.vercel.app/api/task", { name: newtask.name, id: newtask.id, status: newtask.status });
+      const response = await axios.post("https://kryzen-task-builder-backend.vercel.app/api/task", { name: newtask.name, id: newtask.id, status: newtask.status , complete_date: newtask.complete_date });
       const { task, message } = response.data;
       setTasks((prevTasks) => [...prevTasks, task]);
 
