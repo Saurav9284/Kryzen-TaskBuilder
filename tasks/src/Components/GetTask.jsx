@@ -154,6 +154,21 @@ const Task = ({ task, tasks, setTasks }) => {
       toast.error("Failed to delete task", { icon: "❌" });
     }
   };
+  const handleUpdateDate =  async (_id, newDate) => {
+
+    try {
+      const token = sessionStorage.getItem("token"); 
+      await axios.put(`https://kryzen-task-builder-backend.vercel.app/api/task/delete/${_id}`,{
+        headers : {
+          Authorization : `Bearer ${token}`
+        }
+      })
+      toast.success('Task Date Updated successfully',{ icon: "✅" })
+    } catch (error) {
+      console.error("Error updating task:", error);
+      toast.error("Failed to update task", { icon: "❌" });
+    }
+  }
 
   return (
     <div
@@ -162,6 +177,7 @@ const Task = ({ task, tasks, setTasks }) => {
     >
       <p>Name:-{" "}{task.name}</p>
       <p>Status:-{" "}{task.status}</p>
+      <button className="mr-2" onClick={()=>handleUpdateDate(task._id, new Date())}>Edit</button>
       <button
         className="absolute bottom-1 right-1 text-red-400"
         onClick={() => handleRemove(task._id,task.id)
