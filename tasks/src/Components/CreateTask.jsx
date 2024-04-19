@@ -8,6 +8,7 @@ const CreateTask = ({ tasks, setTasks }) => {
     id: "",
     name: "",
     status: "task",
+    complete_date: ""
   });
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,6 +26,7 @@ const CreateTask = ({ tasks, setTasks }) => {
         id: "",
         name: "",
         status: "task",
+        complete_date: ""
       });
       setIsModalOpen(false);
     } catch (error) {
@@ -33,8 +35,8 @@ const CreateTask = ({ tasks, setTasks }) => {
     }
   };
 
-  const handleInputChange = (e) => {
-    setNewTask({ ...newtask, id: uuidv4(), name: e.target.value });
+ const handleInputChange = (e) => {
+    setNewTask({ ...newtask, id: uuidv4(), name: e.target.value , complete_date: e.target.value});
   };
 
   return (
@@ -52,6 +54,13 @@ const CreateTask = ({ tasks, setTasks }) => {
                 value={newtask.name}
                 onChange={handleInputChange}
               />
+               <input
+                  placeholder="Choose Date"
+                  type="date"
+                  name="complete_date"
+                  value={newtask.complete_date}
+                  onChange={handleInputChange}
+                />
               <div className="flex justify-end">
                 <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mr-2">Save</button>
                 <button onClick={() => setIsModalOpen(false)} className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md">Cancel</button>
